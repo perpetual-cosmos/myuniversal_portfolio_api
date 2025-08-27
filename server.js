@@ -16,7 +16,15 @@ app.get("/personal/:field", (req, res) => {
   }
 });
 
-
+// 🔹 2. Get Freelancing Info
+app.get("/freelancing/:field", (req, res) => {
+  const field = req.params.field; // e.g. projectsCount, openSourceContribution
+  if (data.freelancing[field] !== undefined) {
+    res.json({ [field]: data.freelancing[field] });
+  } else {
+    res.status(404).json({ error: "Field not found" });
+  }
+});
 
 
 
