@@ -26,6 +26,10 @@ app.get("/freelancing/:field", (req, res) => {
   }
 });
 
+// 🔹 3. Get All Projects
+app.get("/projects", (req, res) => {
+  res.json(data.projects);
+});
 
 
 
