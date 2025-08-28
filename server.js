@@ -31,6 +31,16 @@ app.get("/projects", (req, res) => {
   res.json(data.projects);
 });
 
-
+// 🔹 4. Get Project by Title
+app.get("/projects/:title", (req, res) => {
+  const project = data.projects.find(
+    (p) => p.title.toLowerCase() === req.params.title.toLowerCase()
+  );
+  if (project) {
+    res.json(project);
+  } else {
+    res.status(404).json({ error: "Project not found" });
+  }
+});
 
 
