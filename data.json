@@ -12,5 +12,25 @@
     "projectsCount": 50,
     "openSourceContribution": 32
   },
-  
+  "projects": [
+    {
+      "title": "E-commerce Platform for Digital Products",
+      "githubUrl": "https://github.com/username/project-one",
+      "liveUrl": "https://ecommerce-frontend-five-sand.vercel.app/",
+      "description": "Secure download system with Stripe payments and comprehensive admin product management. Achieved 50+ transactions in the first month."
+    },
+    {
+      "title": "Real-Time Chat Application",
+      "githubUrl": "https://github.com/username/project-two",
+      "liveUrl": "https://projecttwo.com",
+      "description": "Sub-second messaging platform with Firebase integration, presence tracking, and robust authentication system."
+    },
+    {
+      "title": "Portfolio & Blog Platform",
+      "githubUrl": "https://github.com/perpetual-cosmos/Portfolio-website",
+      "liveUrl": "https://abouttarunsingh.netlify.app/#",
+      "description": "SEO-optimized Next.js website with Markdown blog integration, driving 30% organic traffic growth for clients."
+    }
+
+  ]
 }
